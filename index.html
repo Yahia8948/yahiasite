@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بنك العائلة - نظام نقاط العائلة</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap');
+        body {
+            font-family: 'Tajawal', sans-serif;
+        }
+        .rtl-support {
+            direction: rtl;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 rtl-support">
+    <!-- شريط التنقل -->
+    <nav class="bg-blue-800 text-white shadow-lg">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-4 space-x-reverse">
+                <i data-feather="home" class="w-6 h-6"></i>
+                <span class="text-xl font-bold">بنك العائلة</span>
+            </div>
+            <div class="hidden md:flex space-x-6 space-x-reverse">
+                <a href="#" class="hover:text-blue-200 transition">الرئيسية</a>
+                <a href="#" class="hover:text-blue-200 transition">كيف يعمل؟</a>
+                <a href="#" class="hover:text-blue-200 transition">تواصل معنا</a>
+            </div>
+            <div class="flex space-x-4 space-x-reverse">
+                <a href="login.php" class="px-4 py-2 rounded hover:bg-blue-700 transition">تسجيل الدخول</a>
+                <a href="register.php" class="px-4 py-2 bg-green-500 rounded hover:bg-green-600 transition">تسجيل جديد</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- قسم البطل -->
+    <section class="bg-gradient-to-r from-blue-900 to-blue-700 text-white py-16">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">نظام نقاط العائلة الذكي</h1>
+                <p class="text-xl mb-8">حفز أفراد عائلتك وسجل إنجازاتهم بنظام النقاط الممتع!</p>
+                <div class="flex space-x-4 space-x-reverse">
+                    <a href="register.php" class="px-6 py-3 bg-green-500 rounded-lg hover:bg-green-600 transition font-medium">ابدأ الآن</a>
+                    <a href="#" class="px-6 py-3 border border-white rounded-lg hover:bg-blue-800 transition font-medium">تعرف أكثر</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <div class="relative">
+                    <div class="w-64 h-64 md:w-80 md:h-80 bg-blue-800 rounded-full flex items-center justify-center">
+                        <i data-feather="award" class="w-32 h-32 text-yellow-300"></i>
+                    </div>
+                    <div class="absolute -top-6 -right-6 bg-green-500 rounded-full w-16 h-16 flex items-center justify-center shadow-lg">
+                        <i data-feather="star" class="w-8 h-8 text-white"></i>
+                    </div>
+                    <div class="absolute -bottom-6 -left-6 bg-white rounded-full w-16 h-16 flex items-center justify-center shadow-lg">
+                        <i data-feather="heart" class="w-8 h-8 text-blue-800"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- الميزات -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-blue-900">كيف يعمل بنك العائلة؟</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- ميزة 1 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i data-feather="user-plus" class="w-8 h-8 text-blue-800"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-center mb-3">تسجيل الأعضاء</h3>
+                    <p class="text-gray-600 text-center">سجل جميع أفراد عائلتك في النظام بسهولة</p>
+                </div>
+                
+                <!-- ميزة 2 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                    <div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i data-feather="dollar-sign" class="w-8 h-8 text-green-800"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-center mb-3">إدارة النقاط</h3>
+                    <p class="text-gray-600 text-center">أضف أو اخصم النقاط حسب إنجازات وسلوكيات الأفراد</p>
+                </div>
+                
+                <!-- ميزة 3 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                    <div class="bg-yellow-100 w-16 h-16 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i data-feather="bar-chart-2" class="w-8 h-8 text-yellow-800"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-center mb-3">تتبع الإنجازات</h3>
+                    <p class="text-gray-600 text-center">تابع سجل النقاط والإنجازات لجميع أفراد العائلة</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم تسجيل الدخول السريع -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6 text-blue-900">هل أنت عضو بالفعل؟</h2>
+            <p class="text-xl mb-8 text-gray-600">سجل دخولك الآن للوصول إلى لوحة التحكم الخاصة بك</p>
+            <a href="login.php" class="px-8 py-3 bg-blue-800 text-white rounded-lg hover:bg-blue-900 transition font-medium text-lg">تسجيل الدخول</a>
+        </div>
+    </section>
+
+    <!-- تذييل الصفحة -->
+    <footer class="bg-blue-900 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <div class="flex items-center space-x-2 space-x-reverse">
+                        <i data-feather="home" class="w-6 h-6"></i>
+                        <span class="text-xl font-bold">بنك العائلة</span>
+                    </div>
+                    <p class="mt-2 text-blue-200">نظام نقاط العائلة الذكي © 2023</p>
+                </div>
+                <div class="flex space-x-6 space-x-reverse">
+                    <a href="#" class="hover:text-blue-200 transition">الشروط والأحكام</a>
+                    <a href="#" class="hover:text-blue-200 transition">سياسة الخصوصية</a>
+                    <a href="#" class="hover:text-blue-200 transition">تواصل معنا</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>
